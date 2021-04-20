@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">StatsOfLegends</string>
+    <string name="text">TEXT</string>
+    <string name="name">Name</string>
 </resources>
