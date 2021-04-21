@@ -13,7 +13,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -31,7 +31,9 @@ android {
         jvmTarget = '1.8'
     }
 }
-
+repositories {
+    mavenCentral()
+}
 
 dependencies {
 
@@ -44,4 +46,7 @@ dependencies {
     implementation "com.merakianalytics.orianna:orianna-android:4.0.0-rc7"
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "com.merakianalytics.orianna:orianna-android:4.0.0-rc7"
+    implementation 'com.android.support:multidex:1.0.3' //enter the latest version
+
 }
